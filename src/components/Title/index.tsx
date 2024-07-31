@@ -1,10 +1,9 @@
-import { ElementType, ReactNode } from 'react'
-import { TITLE_VARIANT } from './constants'
+import { ReactHTML, ReactNode } from 'react'
 import './Title.scss'
 import { classNames } from '../../utils'
 
 interface Title {
-  is: ElementType
+  is: keyof ReactHTML
   children: string | ReactNode
   variant?: string
 }

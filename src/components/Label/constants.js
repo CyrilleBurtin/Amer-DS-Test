@@ -1,3 +1,4 @@
 export const LABEL_VARIANT = {
-  GRAY: 'gray'
+  GRAY: 'gray',
+  RED: 'red'
 }

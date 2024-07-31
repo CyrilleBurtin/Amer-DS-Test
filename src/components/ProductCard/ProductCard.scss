@@ -1,8 +1,7 @@
 .slm-product-card {
-  @apply w-[354px]
-    h-[420px]
-    border
-    border-salomon-gray-400;
+  @apply bg-white
+    w-[354px]
+    h-[420px];
 
   &__content {
     @apply p-6
@@ -22,6 +21,7 @@
   &__time {
     @apply flex
       items-center
+      text-base
       gap-2;
   }
 }

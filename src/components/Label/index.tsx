@@ -5,7 +5,7 @@ import './Label.scss'
 
 const Label = ({ variant = 'gray', children }: Label) => {
   const classes = {
-    label: classNames('slm-Label', `--${variant}`)
+    label: classNames('slm-label', `--${variant}`)
   }
 
   return <span className={classes.label}>{children}</span>

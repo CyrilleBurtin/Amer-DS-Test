@@ -1,11 +1,11 @@
 import { type Products } from '../../interfaces/products'
+import Title from '../Title'
+import Text from '../Text'
+import Label from '../Label'
 import timer from 'assets/icons/timer.svg'
-import Title from '../Title/Title'
-import Text from '../Text/Text'
-import Label from '../Label/Label'
 import { LABEL_VARIANT } from '../Label/constants'
-import './ProductCard.scss'
 import { TITLE_VARIANT } from '../Title/constants'
+import './ProductCard.scss'
 
 const ProductCard = ({ img, title, description, time, label }: Products) => {
   const classes = {
@@ -19,18 +19,26 @@ const ProductCard = ({ img, title, description, time, label }: Products) => {
 
   return (
     <div className={classes.container}>
-      <img src={img} alt={description} className={classes.image} />
+      <img src={`${img}`} alt={description} width="354" height="210" />
       <div className={classes.content}>
-        <div className={classes.header}>
+        <header className={classes.header}>
           <Title is="h2" variant={TITLE_VARIANT.RED}>
             {title}
           </Title>
           <Text>{description}</Text>
-        </div>
+        </header>
         <div className={classes.info}>
-          <Text className={classes.time}>
-            <img src={timer} alt="timing" /> {time}&nbsp;min
-          </Text>
+          <p className={classes.time}>
+            <img
+              src={timer}
+              alt="timing"
+              width="24"
+              height="24"
+              loading="lazy"
+            />{' '}
+            {time}
+            &nbsp;min
+          </p>
           <Label variant={LABEL_VARIANT.GRAY}>{label}</Label>
         </div>
       </div>
