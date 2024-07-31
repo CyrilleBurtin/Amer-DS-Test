@@ -1,0 +1,10 @@
+.slm-Label {
+  @apply rounded-3xl;
+
+  &.--gray {
+    @apply px-2
+      py-0.5
+      bg-salomon-gray-200
+      text-salomon-gray-400;
+  }
+}

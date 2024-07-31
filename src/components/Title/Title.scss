@@ -1,0 +1,9 @@
+.slm-title {
+  @apply text-salomon-black
+    font-semibold
+    font-inter;
+
+  &.--red{
+    @apply text-salomon-red
+  }
+}

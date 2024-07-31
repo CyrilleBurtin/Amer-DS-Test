@@ -6,11 +6,11 @@ function App() {
   return (
     <>
       {PRODUCTS_MOCK.map(
-        ({ img, title, subtitle, time, label, id }: Products) => (
+        ({ img, title, description, time, label, id }: Products) => (
           <ProductCard
             img={img}
             title={title}
-            subtitle={subtitle}
+            description={description}
             time={time}
             label={label}
             id={id}

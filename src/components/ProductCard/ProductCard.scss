@@ -1,3 +1,27 @@
 .slm-product-card {
-  @apply bg-amber-500
+  @apply w-[354px]
+    h-[420px]
+    border
+    border-salomon-gray-400;
+
+  &__content {
+    @apply p-6
+      flex
+      flex-col;
+  }
+
+  &__header {
+    @apply h-[138px]
+  }
+
+  &__info {
+    @apply flex
+    justify-between
+  }
+
+  &__time {
+    @apply flex
+      items-center
+      gap-2;
+  }
 }
