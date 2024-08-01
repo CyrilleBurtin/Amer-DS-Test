@@ -1,6 +1,7 @@
 import { ReactHTML, ReactNode } from 'react';
-import './Title.scss';
+import { TITLE_VARIANT } from './constants';
 import { classNames } from '../../utils';
+import './Title.scss';
 
 interface Title {
   is: keyof ReactHTML;
@@ -9,7 +10,12 @@ interface Title {
   className?: string;
 }
 
-const Title = ({ is, variant = 'gray', children, className }: Title) => {
+const Title = ({
+  is,
+  variant = TITLE_VARIANT.GRAY,
+  children,
+  className
+}: Title) => {
   const TitleTag = is;
 
   const classes = {

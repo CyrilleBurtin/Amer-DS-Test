@@ -1,9 +1,14 @@
-import { type Label } from '../../interfaces/label';
-import './Label.scss';
+import { ReactNode } from 'react';
 import { classNames } from '../../utils';
 import './Label.scss';
+import { LABEL_VARIANT } from './constants';
 
-const Label = ({ variant = 'gray', children }: Label) => {
+interface Label {
+  variant?: string;
+  children: string | ReactNode;
+}
+
+const Label = ({ variant = LABEL_VARIANT.GRAY, children }: Label) => {
   const classes = {
     label: classNames('slm-label', `--${variant}`)
   };

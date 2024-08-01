@@ -1,5 +1,5 @@
-import { render } from '@testing-library/react';
 import Label from './index.js';
+import { render } from '@testing-library/react';
 import { LABEL_VARIANT } from './constants.js';
 
 describe('<Label>', () => {

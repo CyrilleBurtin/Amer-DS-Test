@@ -21,6 +21,7 @@ describe('<Title>', () => {
         Custom title
       </Title>
     );
+
     expect(container.firstChild).toHaveClass('slm-title custom-class');
     expect(getByText(/Custom title/i)).toBeInTheDocument();
     expect(container).toMatchSnapshot();

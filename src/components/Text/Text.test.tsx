@@ -1,5 +1,5 @@
-import { render } from '@testing-library/react';
 import Text from './index.js';
+import { render } from '@testing-library/react';
 
 describe('<Text>', () => {
   it('should render the default component with custom text', () => {
@@ -14,6 +14,7 @@ describe('<Text>', () => {
     const { container, getByText } = render(
       <Text className="custom-class">Custom text</Text>
     );
+
     expect(container.firstChild).toHaveClass('slm-text custom-class');
     expect(getByText(/Custom text/i)).toBeInTheDocument();
     expect(container).toMatchSnapshot();

@@ -1,10 +1,10 @@
-import { type Product } from '../../interfaces/product';
 import Title from '../Title';
 import Text from '../Text';
 import Label from '../Label';
-import timer from 'assets/icons/timer.svg';
+import { type Product } from '../../interfaces/product';
 import { LABEL_VARIANT } from '../Label/constants';
 import { TITLE_VARIANT } from '../Title/constants';
+import timer from 'assets/icons/timer.svg';
 import './ProductCard.scss';
 
 const ProductCard = ({ img, title, description, time, label }: Product) => {
