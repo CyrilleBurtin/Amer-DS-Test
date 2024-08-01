@@ -1,0 +1,57 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<ProductCard> > should render the component 1`] = `
+<div>
+  <div
+    class="slm-product-card"
+  >
+    <img
+      alt="Pour les skieur confirmés"
+      height="210"
+      src="image/test.jpeg"
+      width="354"
+    />
+    <div
+      class="slm-product-card__content"
+    >
+      <header
+        class="slm-product-card__header"
+      >
+        <h2
+          class="slm-title --red"
+        >
+          Ski de rando
+        </h2>
+        <p
+          class="slm-text"
+        >
+          Pour les skieur confirmés
+        </p>
+      </header>
+      <div
+        class="slm-product-card__info"
+      >
+        <p
+          class="slm-product-card__time"
+        >
+          <img
+            alt="timing"
+            height="24"
+            loading="lazy"
+            src="/src/assets/icons/timer.svg"
+            width="24"
+          />
+           
+          10
+           min
+        </p>
+        <span
+          class="slm-label --gray"
+        >
+          Promo
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

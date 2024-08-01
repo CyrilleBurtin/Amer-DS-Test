@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 
 export interface Label {
-  variant: string
+  variant?: string
   children: string | ReactNode
 }

@@ -1,0 +1,41 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<Label> > should render the default component (gray) 1`] = `
+<div>
+  <span
+    class="slm-label --gray"
+  >
+    No variant passed
+  </span>
+</div>
+`;
+
+exports[`<Label> > should render the default component 1`] = `
+<div>
+  <span
+    class="slm-label --gray"
+  >
+    No variant passed
+  </span>
+</div>
+`;
+
+exports[`<Label> > should render the gray variant component with custom text 1`] = `
+<div>
+  <span
+    class="slm-label --gray"
+  >
+    Label content
+  </span>
+</div>
+`;
+
+exports[`<Label> > should render the red variant component with custom text 1`] = `
+<div>
+  <span
+    class="slm-label --red"
+  >
+    Red variant
+  </span>
+</div>
+`;

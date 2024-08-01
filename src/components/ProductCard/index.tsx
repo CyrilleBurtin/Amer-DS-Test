@@ -1,4 +1,4 @@
-import { type Products } from '../../interfaces/products'
+import { type Product } from '../../interfaces/product'
 import Title from '../Title'
 import Text from '../Text'
 import Label from '../Label'
@@ -7,7 +7,7 @@ import { LABEL_VARIANT } from '../Label/constants'
 import { TITLE_VARIANT } from '../Title/constants'
 import './ProductCard.scss'
 
-const ProductCard = ({ img, title, description, time, label }: Products) => {
+const ProductCard = ({ img, title, description, time, label }: Product) => {
   const classes = {
     container: 'slm-product-card',
     image: 'slm-product-card__image',
