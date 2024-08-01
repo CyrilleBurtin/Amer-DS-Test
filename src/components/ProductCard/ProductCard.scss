@@ -10,12 +10,12 @@
   }
 
   &__header {
-    @apply h-[138px]
+    @apply h-[138px];
   }
 
   &__info {
     @apply flex
-    justify-between
+    justify-between;
   }
 
   &__time {

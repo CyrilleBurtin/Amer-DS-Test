@@ -1,6 +1,6 @@
-import { render } from '@testing-library/react'
-import ProductCard from './'
-import { describe } from 'vitest'
+import { render } from '@testing-library/react';
+import ProductCard from './';
+import { describe } from 'vitest';
 
 describe('<ProductCard>', () => {
   const product = {
@@ -10,15 +10,15 @@ describe('<ProductCard>', () => {
     description: 'Pour les skieur confirmés',
     time: 10,
     label: 'Promo'
-  }
+  };
 
   it('should render the component', () => {
-    const { container, getByText } = render(<ProductCard {...product} />)
+    const { container, getByText } = render(<ProductCard {...product} />);
 
-    expect(getByText(/Ski de rando/i)).toBeInTheDocument()
-    expect(getByText(/Pour les skieur confirmés/i)).toBeInTheDocument()
-    expect(getByText(/Promo/i)).toBeInTheDocument()
+    expect(getByText(/Ski de rando/i)).toBeInTheDocument();
+    expect(getByText(/Pour les skieur confirmés/i)).toBeInTheDocument();
+    expect(getByText(/Promo/i)).toBeInTheDocument();
 
-    expect(container).toMatchSnapshot()
-  })
-})
+    expect(container).toMatchSnapshot();
+  });
+});

@@ -1,6 +1,6 @@
-import { PRODUCTS_MOCK } from '../mock/productsMock'
-import { type Product } from 'interfaces/product'
-import ProductCard from './ProductCard'
+import { PRODUCTS_MOCK } from '../mock/productsMock';
+import { type Product } from 'interfaces/product';
+import ProductCard from './ProductCard';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         )
       )}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

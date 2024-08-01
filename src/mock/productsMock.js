@@ -7,4 +7,4 @@ export const PRODUCTS_MOCK = [
     time: 5,
     label: 'Label'
   }
-]
+];

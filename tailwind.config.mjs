@@ -5,17 +5,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        "salomon-red": "#AF0C1E",
-        "salomon-black": "#141414",
-        "salomon-gray": {
-          200: "#E5E5E5",
-          400: "#525252"
+        'salomon-red': '#AF0C1E',
+        'salomon-black': '#141414',
+        'salomon-gray': {
+          200: '#E5E5E5',
+          400: '#525252'
         }
       },
       fontFamily: {
-        "inter": ['inter']
+        inter: ['inter']
       }
     }
   },
   plugins: []
-}
+};
