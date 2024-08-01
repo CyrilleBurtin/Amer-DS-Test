@@ -1,3 +1,4 @@
 export const TITLE_VARIANT = {
-  RED: 'red'
+  RED: 'red',
+  GRAY: 'gray'
 };
