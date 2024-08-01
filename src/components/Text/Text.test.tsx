@@ -12,10 +12,10 @@ describe('<Text>', () => {
 
   it('should render the default component with custom text and custom class', () => {
     const { container, getByText } = render(
-      <Text className="custom-class">Custom text</Text>
+      <Text className="p-4">Custom text</Text>
     );
 
-    expect(container.firstChild).toHaveClass('slm-text custom-class');
+    expect(container.firstChild).toHaveClass('slm-text p-4');
     expect(getByText(/Custom text/i)).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });

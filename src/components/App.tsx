@@ -4,9 +4,9 @@ import ProductCard from './ProductCard';
 
 function App() {
   return (
-    <div className="bg-gray-200 h-lvh w-full flex items-center justify-center">
+    <div className="w-full h-lvh flex items-center justify-center bg-gray-200 ">
       {PRODUCTS_MOCK.map((product: Product) => (
-        <ProductCard {...product} />
+        <ProductCard {...product} key={product.description} />
       ))}
     </div>
   );
