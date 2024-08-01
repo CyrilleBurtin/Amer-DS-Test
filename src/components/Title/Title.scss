@@ -4,6 +4,10 @@
     font-inter;
 
   &.--red{
-    @apply text-salomon-red
+    @apply text-salomon-red;
+  }
+
+  &.--gray{
+    @apply text-salomon-gray-400;
   }
 }

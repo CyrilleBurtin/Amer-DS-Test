@@ -6,20 +6,17 @@ interface Title {
   is: keyof ReactHTML
   children: string | ReactNode
   variant?: string
+  className?: string
 }
 
-const Title = ({ is, variant, children, ...props }: Title) => {
+const Title = ({ is, variant = 'gray', children, className }: Title) => {
   const TitleTag = is
 
   const classes = {
-    title: classNames('slm-title', `--${variant}`)
+    title: classNames('slm-title', className, `--${variant}`)
   }
 
-  return (
-    <TitleTag className={classes.title} {...props}>
-      {children}
-    </TitleTag>
-  )
+  return <TitleTag className={classes.title}>{children}</TitleTag>
 }
 
 export default Title
