@@ -1,12 +1,19 @@
 .slm-product-card {
   @apply bg-white
-    w-[354px]
-    h-[420px];
+    max-w-[354px];
+
+  &__image {
+    @apply w-[354px]
+    h-[210px]
+    object-cover
+  }
 
   &__content {
     @apply p-6
       flex
-      flex-col;
+      flex-col
+      flex-grow
+      justify-between;
   }
 
   &__header {

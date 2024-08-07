@@ -7,9 +7,8 @@ exports[`<ProductCard> > should render the component and create a snapshot 1`] =
   >
     <img
       alt="Pour les skieur confirmés"
-      height="210"
+      class="slm-product-card__image"
       src="image/test.jpeg"
-      width="354"
     />
     <div
       class="slm-product-card__content"

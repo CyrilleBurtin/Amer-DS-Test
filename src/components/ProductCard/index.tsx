@@ -19,7 +19,7 @@ const ProductCard = ({ img, title, description, time, label }: Product) => {
 
   return (
     <div className={classes.container}>
-      <img src={`${img}`} alt={description} width="354" height="210" />
+      <img src={`${img}`} alt={description} className={classes.image} />
       <div className={classes.content}>
         <header className={classes.header}>
           <Title is="h2" variant={TITLE_VARIANT.RED}>

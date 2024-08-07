@@ -13,7 +13,7 @@ exports[`<Text> > should render the default component with custom text 1`] = `
 exports[`<Text> > should render the default component with custom text and custom class 1`] = `
 <div>
   <p
-    class="slm-text custom-class"
+    class="slm-text p-4"
   >
     Custom text
   </p>
